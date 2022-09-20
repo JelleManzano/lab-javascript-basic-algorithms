@@ -43,7 +43,24 @@ for (let i = 0; i < hacker1.length; i++) {
 //Bonus 1:
 let latin = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis dui at lorem scelerisque pretium. Fusce lacinia feugiat neque, ut mollis ligula accumsan eget. Sed eget felis justo. Cras ultrices sed velit sit amet blandit. Proin malesuada, sem ac pulvinar sagittis, sem odio dignissim eros, eu volutpat odio erat non diam. Mauris at blandit magna, in euismod nunc. Nullam porta euismod nunc, at ornare ante fermentum ac. Sed in blandit erat. Aenean ultrices sodales consequat. Morbi nisi nisl, rutrum eget finibus id, aliquam sodales purus. Suspendisse fringilla metus at blandit vehicula. Donec sed dignissim lacus.
 
-Phasellus laoreet imperdiet metus, id luctus magna efficitur in. Cras vel enim sed mauris lacinia mollis. Etiam eget commodo mauris. Morbi fringilla venenatis diam eget imperdiet. Morbi mi ex, fermentum nec turpis et, vestibulum blandit sem. Sed a malesuada ante, id laoreet dui. In in congue metus. Integer tincidunt hendrerit lectus, id congue ligula pulvinar vitae. In finibus mi fringilla quam sagittis, eget convallis ipsum vestibulum. In in nisl mollis velit imperdiet sagittis. Integer eu euismod diam, sed lacinia eros. Pellentesque ultrices felis sit amet ornare volutpat.
+Phasellus laoreet imperdiet metus, id luctus magna efficitur in. Cras vel enim sed mauris lacinia mollis. Etiam eget commodo mauris. Morbi fringilla venenatis diam eget imperdiet. Morbi mi ex, fermentum nec turpis et , vestibulum blandit sem. Sed a malesuada ante, id laoreet dui. In in congue metus. Integer tincidunt hendrerit lectus, id congue ligula pulvinar vitae. In finibus mi fringilla quam sagittis, eget convallis ipsum vestibulum. In in nisl mollis velit imperdiet sagittis. Integer eu euismod diam, sed lacinia eros. Pellentesque ultrices felis sit amet ornare volutpat.
 
 Phasellus mauris sem, rutrum nec ex eu, tempor tincidunt sem. Nullam non ex porttitor, ornare erat in, sollicitudin mi. Mauris iaculis porttitor tempor. Sed imperdiet urna non mi ornare iaculis. Morbi at ante rhoncus, mattis erat at, ornare lorem. Donec ornare auctor neque, nec condimentum velit laoreet ut. Cras nec tempor lorem, eget vulputate augue. Vestibulum dapibus massa tempor quam vehicula rhoncus.`
-console.log(countWords(latin))
+
+let words = 0;
+
+for (let i= 0; i < latin.length; i++){
+    if(latin[i] == " ") {
+        words++;
+    }
+}
+
+console.log("Words:" + words)
+
+let etCounter = 0;
+
+    if (latin.indexOf(`et`) > -1) {
+      etCounter++;
+    }
+
+console.log("The number of times et appear is:" + etCounter)
